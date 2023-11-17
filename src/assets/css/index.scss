@@ -1,0 +1,17 @@
+// Подключение миксинов
+@import "mixins/adaptive";
+
+// Генеральные стили
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+// Подключаем файл с шрифты
+@import 'fonts';
+
+// Подключение стилей секции
+@import 'sections/example';
+
+
+
+

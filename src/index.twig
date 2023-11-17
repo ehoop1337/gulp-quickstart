@@ -1,0 +1,14 @@
+{% extends "layouts/page.twig" %}
+
+{% set pageTitle = 'Home' %}
+{% set pageName = 'home' %}
+
+{% block page %}
+
+    <div>This is page</div>
+
+    {% include 'sections/example.twig' %}
+
+    {% include 'sections/example-with-params.twig' with {'elements': ['element 1', 'element 2', 'element 3']} %}
+
+{% endblock %}

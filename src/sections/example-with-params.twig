@@ -1,0 +1,17 @@
+{% extends "../layouts/section.twig" %}
+
+{% set sectionName = 'example-with-params' %}
+
+{% block section %}
+
+    <h1>This is example section with params:</h1>
+
+    {% if elements|length > 0 %}
+    <ul>
+        {% for element in elements %}
+            <li>{{ element|e }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+{% endblock %}
